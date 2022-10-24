@@ -1,2 +1,0 @@
-this is i ${i}
-my name is ${x}
