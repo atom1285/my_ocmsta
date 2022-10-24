@@ -16,4 +16,4 @@ sudo a2dissite $USER.wezeo.fail.conf
 sudo a2ensite $USER.wezeo.fail.conf 
 sudo systemctl reload apache2
 
-sudo certbot --apache -d $USER.wezeo.fail #TODO: what happens if the certificate already exists
+sudo certbot --apache -d $USER.wezeo.fail
