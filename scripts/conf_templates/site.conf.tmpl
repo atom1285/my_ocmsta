@@ -1,0 +1,14 @@
+<virtualhost *:80>  
+ServerAdmin webmaster@localhost  
+ServerName ${USER}.wezeo.fail  
+ServerAlias www.${USER}.wezeo.fail 
+DocumentRoot /var/www/${USER}.wezeo.fail  
+ErrorLog ${APACHE_LOG_DIR}/error.log  
+CustomLog ${APACHE_LOG_DIR}/access.log combined  
+RewriteEngine on
+</virtualhost>
+<Directory /var/www/${USER}.wezeo.fail>
+    Options FollowSymLinks
+    AllowOverride All
+    Require all granted
+</Directory>
